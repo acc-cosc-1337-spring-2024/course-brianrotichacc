@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.c_decisions.decisions import get_and_result, get_not_result, get_or_result, test_config
+from src.examples.c_decisions.decisions import get_and_result, get_not_result, get_or_result, is_even, test_config
 
 class Test_Config(unittest.TestCase):
 
@@ -22,3 +22,7 @@ class Test_Config(unittest.TestCase):
     def test_not_truth_table(self):
         self.assertEqual(get_not_result(True), False)
         self.assertEqual(get_not_result(False), True)
+
+    def test_is_even(self):
+        self.assertEqual(is_even(1), False)
+        self.assertEqual(is_even(2), True)

@@ -12,3 +12,7 @@ def get_or_result(bool1,bool2):
 def get_not_result(bool1):
     result = not bool1
     return result
+
+def is_even(num):
+    remainder = num % 2
+    return remainder == 0
