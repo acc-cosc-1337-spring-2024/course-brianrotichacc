@@ -1,34 +1,25 @@
 import repetition
-
-homework_3_menu = int(input("Please enter your option: "))
-
-if homework_3_menu == 3:
-    global keep_going 
-    keep_going= input("Do you want to continue? ")
-    if keep_going == 'Y' or keep_going == 'y':
-        homework_3_menu = int(input("Please enter your option: "))
-    else:
-        exit()
-
-while keep_going=="Y" or keep_going=="y":
+while True:
+    homework_3_menu = int(input("Please enter your option: "))
     if homework_3_menu == 1:
         num = int(input("Please enter a number: "))
-        if num>=0 and num<=10:
+        if num in range(0,11):
             result = repetition.get_factorial(num)
             print(f"The factorial of {num} is {result}")
         else:
-            num = int(input("Please enter a valid number: "))
-            result = repetition.get_factorial(num)
-            print(f"The factorial of {num} is {result}")
-        # keep_going = input("Do you want to Continue? ")
+            print("Please enter a number between 1 and 10")
     elif homework_3_menu ==2:
         num = int(input("Please enter a number: "))
-        if num>=0 and num<=100:
+        if num in range(0,101): #>=0 and num<=100:
             result = repetition.get_factorial(num)
-            print(f"The factorial of {num} is {result}")
+            print(f"The sum of odd number {num} is {result}")
         else:
-            num = int(input("Please enter a valid number: "))
-            result = repetition.get_factorial(num)
-            print(f"The sum of odd numbers of {num} is {result}")
+            print("Please enter a number between 0 and 100")
+    elif homework_3_menu ==3:
+        pass
     else:
-        print('Invalid Number Entry')
+        print("Please enter a valid choice")
+        pass
+    keep_going = input("Do you want to continue? (Y/N): ").lower()
+    if keep_going != 'y':
+        exit()
