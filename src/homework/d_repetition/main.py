@@ -1,4 +1,8 @@
 import repetition
+def display_menu():
+    print(" Option 1: Factorial\n Option 2: Sum of Odd Numbers\n Option 3: Exit ")
+
+display_menu()
 while True:
     homework_3_menu = int(input("Please enter your option: "))
     if homework_3_menu == 1:
