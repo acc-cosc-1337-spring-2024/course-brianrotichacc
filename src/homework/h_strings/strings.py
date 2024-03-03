@@ -18,8 +18,3 @@ def get_dna_complement(dna):
     reverse_dna = ''.join(complement_map[i] for i in dna[::-1])
     
     return reverse_dna
-
-# # Example usage
-# dna_string = "GTCA"
-# reverse_comp_dna = get_dna_complement(dna_string)
-# print(f"The reverse complement of '{dna_string}' is '{reverse_comp_dna}'.")
