@@ -1,7 +1,7 @@
 import unittest
 '''
 the file in /tests/homework/i_dictionaries_and_sets/tests_dictionaries_sets
-has the test strings
+has tests dictionaries sets
 '''
 from tests.homework.i_dictionaries_sets import tests_dictionaries_and_sets
 
