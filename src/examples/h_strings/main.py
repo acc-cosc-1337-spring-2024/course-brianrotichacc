@@ -1,1 +1,6 @@
-#main program
+
+
+lang = 'Python'
+
+
+help(int)
